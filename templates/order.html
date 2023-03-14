@@ -31,7 +31,7 @@
         <thoby>
             <tr class="table-active table-dark">
                 <th scope="row">{{ forloop.counter }}</th>
-                <td>{{ pos.product_id }}</td>
+                <td><a href="{% url 'standup' pos.pk %}">{{ pos.product_id }}</a></td>
                 <td>{{ pos.card_id }}</td>
                 <td>{{ pos.quantity }}</td>
 

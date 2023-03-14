@@ -11,7 +11,7 @@ class OrderCreateView(CreateView):
     fields = ['order_id', 'card_id', 'product_id', 'quantity']
 class OrderUpdateView(UpdateView):
     model = Order
-    template_name = 'order_edit.html'
+    template_name = 'order_editor.html'
     slug_url_kwarg = 'order_id'
     fields = ['card_id', 'product_id', 'quantity']
 class ProductCreateView(CreateView): # new
