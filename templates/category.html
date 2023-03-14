@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table class="table table-dark table-hover">
+
+
+    <h1> Names </h1>
+    <ul>
+        {% for pos in  object_list %}
+            <li>{{ pos.name }}</li>
+        {% endfor %}
+    </ul>
+
+</table>
+</body>
+</html>

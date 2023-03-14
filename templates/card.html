@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1> Names </h1>
+    <ul>
+        {% for pos in  object_list %}
+            <li>{{ pos.deliverdy_date }}</li>
+            <li>{{ pos.user_id}}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
